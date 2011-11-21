@@ -53,7 +53,7 @@ class ConfigurationsController extends ConfigurationAppController {
 			$this->Session->setFlash(__('Invalid id for Configuration'));
 			$this->redirect(array('action'=>'index'));
 		}
-		if ($this->Configuration->del($id)) {
+		if ($this->Configuration->delete($id)) {
 			$this->Session->setFlash(__('Configuration deleted'));
 			$this->redirect(array('action'=>'index'));
 		}
