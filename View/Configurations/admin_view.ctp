@@ -20,9 +20,9 @@
 </div>
 <div class="actions">
 	<ul>
-		<li><?php echo $html->link(__('Edit Configuration'), array('action'=>'edit', $configuration['Configuration']['id'])); ?> </li>
-		<li><?php echo $html->link(__('Delete Configuration'), array('action'=>'delete', $configuration['Configuration']['id']), null, sprintf(__('Are you sure you want to delete # %s?'), $configuration['Configuration']['id'])); ?> </li>
-		<li><?php echo $html->link(__('List Configurations'), array('action'=>'index')); ?> </li>
-		<li><?php echo $html->link(__('New Configuration'), array('action'=>'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Edit Configuration'), array('action'=>'edit', $configuration['Configuration']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('Delete Configuration'), array('action'=>'delete', $configuration['Configuration']['id']), null, sprintf(__('Are you sure you want to delete # %s?'), $configuration['Configuration']['id'])); ?> </li>
+		<li><?php echo $this->Html->link(__('List Configurations'), array('action'=>'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Configuration'), array('action'=>'add')); ?> </li>
 	</ul>
 </div>
