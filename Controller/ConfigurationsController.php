@@ -3,7 +3,7 @@ App::uses('ConfigurationAppController', 'Configuration.Controller');
 class ConfigurationsController extends ConfigurationAppController {
 
 	var $name = 'Configurations';
-	var $helpers = array('Html', 'Form');
+	var $helpers = array('Html', 'Form', 'Paginator');
 
 	function admin_index() {
 		$this->Configuration->recursive = 0;
@@ -60,4 +60,3 @@ class ConfigurationsController extends ConfigurationAppController {
 	}
 
 }
-?>

@@ -1,4 +1,5 @@
 <?php
+App::uses('ConfigurationAppModel', 'Configuration.Model');
 class Configuration extends ConfigurationAppModel {
   var $name = 'Configuration';
 
@@ -22,4 +23,3 @@ class Configuration extends ConfigurationAppModel {
     }
   }
 }
-?>
